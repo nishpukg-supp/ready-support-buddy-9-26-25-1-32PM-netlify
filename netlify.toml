@@ -1,0 +1,12 @@
+[build]
+command = "npm --prefix web run build"
+publish = "web/dist"
+
+[build.environment]
+VITE_API_BASE = "/.netlify/functions"
+
+[[redirects]]
+from = "/api/*"
+to = "/.netlify/functions/:splat"
+status = 200
+force = true

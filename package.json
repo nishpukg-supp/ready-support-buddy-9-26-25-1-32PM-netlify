@@ -1,0 +1,10 @@
+{
+  "name": "readymentor-netlify",
+  "private": true,
+  "workspaces": [
+    "web"
+  ],
+  "dependencies": {
+    "@google-cloud/discoveryengine": "^1.7.0"
+  }
+}
